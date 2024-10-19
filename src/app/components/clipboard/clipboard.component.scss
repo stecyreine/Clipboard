@@ -1,0 +1,165 @@
+ 
+
+*{
+   
+    font-size: 23px;
+}
+
+.custom-margin{
+    margin: 10% 10% 0  10%;
+}
+
+.margini{
+    margin: 5%;
+    padding-right: 50%;
+    width: 200px;
+   
+}
+
+
+.img{
+    width: 30px;
+}
+
+.begin{
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+    img{
+        margin-bottom: 5%;
+    }
+    .title1{
+        margin-bottom:5%;
+        h1{
+            font-size: 70px;
+            
+        }
+        p{
+
+            width: 50%;
+            margin: 2% auto;
+        }
+    }
+    
+    
+}
+
+section{
+    margin-top: 15%;
+    .first{
+        .title{
+            display: block;
+            text-align: center;
+            margin-bottom:7%;
+            h2{
+                font-size: 50px;
+                
+            }
+            p{
+    
+                width: 50%;
+                margin: 2% auto;
+            }
+        }
+        .flexi{
+          img{
+            margin-left:-5% ; 
+            width: 1200px;
+            }
+          .blocki{
+            width: 35%;
+            margin:5% 10%;
+            
+            
+          }  
+        }
+    }
+    
+
+    .second{
+        margin-top: 10%;
+        .title{
+            display: block;
+            text-align: center;
+            margin-bottom:7%;
+            h2{
+                font-size: 50px;
+                
+            }
+            p{
+    
+                width: 50%;
+                margin: 2% auto;
+            }
+        }
+
+        img {
+            margin: 0 15%;
+            width: 1200px;
+        }
+
+    }
+
+
+    .third{
+        .title{
+            display: block;
+            text-align: center;
+            margin-top: 10%;
+            margin-bottom:7%;
+            h2{
+                font-size: 50px;
+                
+            }
+            p{
+    
+                width: 50%;
+                margin: 2% auto;
+            }
+        }
+
+        .flexi1{
+         
+            text-align: center;
+            margin: 0 10%;
+        }
+
+
+    }
+
+    .forth{
+        margin: 15% 5%;
+        
+        img{
+            width: 230px;
+            margin-left: 5%;
+        }
+    }
+
+    .fifth{
+        display: block;
+        text-align: center;
+        .title{
+            display: block;
+            text-align: center;
+            margin-top: 10%;
+            margin-bottom:7%;
+            h2{
+                font-size: 50px;
+                
+            }
+            p{
+    
+                width: 50%;
+                margin: 2% auto;
+            }
+        }
+
+    }
+
+  .background{
+    background-color: gray;
+  }
+    
+
+}

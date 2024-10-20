@@ -1,13 +1,13 @@
-<div class=" ">
-    <button class="rounded-pill p-3 px-5 btn btn-ios " (click)="getQrcode()">Download for IOS</button>
-    <button class="rounded-pill p-3 px-5 btn btn-mac" (click)="getQrcode()">Download for Mac</button>
-</div>
-
+<div class="pop ">
+    <button class="rounded-pill p-3 px-5 btn btn-ios " (click)="open()">Download for IOS</button>
+    <button class="rounded-pill p-3 px-5 btn btn-mac" (click)="open()">Download for Mac</button>
 
 <div class="popup " [ngClass]="classe == 'not' ? 'display' : 'hide'">
-   <div class="qr">
-    <img *ngIf="qrcode"
-    [src]="qrcode" alt="">
-    <button (click)="close()" [ngClass]="classe == 'not' ? 'display' : 'hide'">Close</button>
-   </div>
+    <div class="qr">
+     <img *ngIf="qrcode"
+     [src]="qrcode" alt="">
+     <button (click)="close()" [ngClass]="classe == 'not' ? 'display' : 'hide'">Close</button>
+    </div>
+ </div>
 </div>
+

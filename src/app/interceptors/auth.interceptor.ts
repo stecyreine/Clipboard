@@ -6,7 +6,7 @@ import {
   HttpInterceptor,
   HttpResponse
 } from '@angular/common/http';
-import { catchError, Observable, tap, throwError } from 'rxjs';
+import {  Observable} from 'rxjs';
 import { environment } from '../../environments/environment.development';
 
 @Injectable()
@@ -26,17 +26,8 @@ export class AuthInterceptor implements HttpInterceptor {
       headers: request.headers.set('X-Api-Key', apikey ),
     
     });
-    return next.handle(reqWithHeader).pipe(
-      tap(event => {
-        if (event instanceof HttpResponse) {
-          console.log('Réponse reçue:', event);
-        }
-      }),
-      catchError(err => {
-        console.error('Erreur interceptée:', err);
-        return throwError(() => err);
-      })
-    );
+    return next.handle(reqWithHeader);
+
 
     
   }

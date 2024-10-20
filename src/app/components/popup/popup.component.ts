@@ -29,14 +29,17 @@ export class PopupComponent {
       console.log('ingetqr');
       const url = URL.createObjectURL(response);
      this.qrcode = url;
-     this.classe="not";
+   
 
     }, (error) => {
       console.error('Erreur lors de la génération du QR code', error);
     });
  }
 
- 
+ open(){
+  this.classe="not";
+  this.getQrcode();
+ }
   
  
   

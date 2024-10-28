@@ -28,7 +28,7 @@ export class PopupComponent {
     this.qrs.generateQr().subscribe((response : Blob)=>{
       console.log('ingetqr');
       const url = URL.createObjectURL(response);
-     this.qrcode = url;
+      this.qrcode = url;
    
 
     }, (error) => {

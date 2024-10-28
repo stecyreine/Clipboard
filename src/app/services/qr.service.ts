@@ -20,7 +20,7 @@ export class QrService {
 
    generateQr(): Observable<Blob>{
   
-  return this.http .get<Blob>('https://api.api-ninjas.com/v1/qrcode?format=' + this.format + '&data=' + this.data , {responseType :'blob' as 'json'});
+  return this.http .get('https://api.api-ninjas.com/v1/qrcode?format=' + this.format + '&data=' + this.data , {responseType :'blob' });
 
 }
 
